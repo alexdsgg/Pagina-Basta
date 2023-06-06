@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title> Prendas de moda para Varones </title>
+  <script>
+    function Pago(){
+            let respuesta,pago;
+            respuesta=document.getElementsByName('resp');
+            for(var i=0;i<respuesta.length;i++){
+                if(respuesta[i].checked)
+                pago=respuesta[i].value;      
+            }
+            alert("Ok este producto será pagado en "+pago);
+        }
+</script>
+  <link rel="stylesheet" type="text/css" href="Prendas1Style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1> <marquee>Prendas de moda para varones</marquee></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#polos">Polos</a></li>
+      <li><a href="#camisas">Camisas</a></li>
+      <li><a href="#pantalones">Pantalones</a></li>
+    </ul>
+  </nav>
+
+  <section id="polos">
+    <h2>Polos</h2>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3202308-483-725/Polo-de-algodon-Oversized-Fit---Beige-claro---H-M-PE.jpg?v=638047938532530000"
+        alt="polo 1">
+      <div class="product-info">
+        <h3>Polo de algodón Oversized Fit</h3>
+        <p> Polo en punto de algodón grueso de 240 g/m2. </p>
+        <p>Precio: $54.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3259317-483-725/Polo-Relaxed-Fit---Marron---H-M-PE.jpg?v=638077349938330000"
+        alt="polo 2">
+      <div class="product-info">
+        <h3>Polo Relaxed Fit</h3>
+        <p>Polo en punto de algodón grueso con cuello redondo.</p>
+        <p>Precio: $39.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3126126-483-725/Polo-de-punto-con-estampado-Relaxed-Fit---Verde-oscuro-Metallica---H-M-PE.jpg?v=638009915037300000"
+        alt="polo 3">
+      <div class="product-info">
+        <h3>Polo de punto con estampado Relaxed Fit</h3>
+        <p>Polo de manga larga en punto de algodón suave con motivo.</p>
+        <p>Precio: $79.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+  <section id="camisas">
+    <h2>Camisas</h2>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3040538-600-900?v=1772236645&width=600&height=900&aspect=true"
+        alt="camisa 1">
+      <div class="product-info">
+        <h3>Camisa de manga corta Regular Fit</h3>
+        <p>Camisa de algodón de corte estándar con cuello inglés, tapeta clásica y canesú en la espalda.
+        </p>
+        <p>Precio: $49.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3291095-483-725/Camisa-Oxford-Regular-Fit---Azul-oscuro---H-M-PE.jpg?v=638080801780500000"
+        alt="camisa 2">
+      <div class="product-info">
+        <h3>Camisa Oxford Regular Fit</h3>
+        <p>Camisa de algodón Oxford de corte estándar con cuello americano, tapeta clásica y bolsillo superior abierto.
+        </p>
+        <p>Precio: $25.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/2865807-483-725/Camisa-de-twill-Relaxed-Fit---Rojo-Negro---H-M-PE.jpg?v=637944458326200000"
+        alt="camisa 3">
+      <div class="product-info">
+        <h3>Camisa de twill Relaxed Fit</h3>
+        <p>Camisa de cuadros en twill de algodón suave con cuello inglés, tapeta clásica y canesú en la espalda.</p>
+        <p>Precio: $69.95</p>
+        <button class="add-to-cart">Agregar al carrito </button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+  <section id="pantalones">
+    <h2>Pantalones</h2>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/2954020-483-725/Pantalon-chino-crop-de-algodon-Slim-Fit---Azul-oscuro---H-M-PE.jpg?v=637970274599730000"
+        alt="pantalon 1">
+      <div class="product-info">
+        <h3>Pantalón chino crop de algodón Slim Fit</h3>
+        <p>Pantalón chino crop en twill de algodón elástico con cierre con botón y elástico en la parte posterior de la pretina.
+        </p>
+        <p>Precio: $79.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3635022-483-725/Joggers-Slim-Fit---Negro---H-M-PE.jpg?v=638199133980330000"
+        alt="pantalon 2">
+      <div class="product-info">
+        <h3>Joggers Slim Fit</h3>
+        <p>Joggers de vestir con pliegue. Elástico revestido y cordón de ajuste en la cintura, bolsillos laterales e insertado detrás.
+        </p>
+        <p>Precio: $89.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3245882-600-900?v=1772318258&width=600&height=900&aspect=true"
+        alt="pantalon 3">
+      <div class="product-info">
+        <h3>Pantalón cargo de twill Regular Fit</h3>
+        <p>Pantalón en twill de algodón con elástico revestido y cordón de ajuste oculto en la cintura.</p>
+        <p>Precio: $129.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+
+  <!-- Secciones de correas y otros accesorios -->
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Accesorios para Varones. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    // Obtener todos los botones "Agregar al carrito"
+    var addToCartButtons = document.querySelectorAll(".add-to-cart");
+  
+    // Recorrer cada botón y agregar un evento de clic
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Obtener el nombre del producto
+        var productName = this.parentElement.querySelector("h3").textContent;
+  
+        // Mostrar mensaje de confirmación
+        alert("Producto \"" + productName + "\" fue añadido al carrito.");
+      });
+    });
+  </script>
+</body>
+</html>

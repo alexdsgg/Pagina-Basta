@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Prendas de moda para Mujeres</title>
+  <script>
+    function Pago(){
+            let respuesta,pago;
+            respuesta=document.getElementsByName('resp');
+            for(var i=0;i<respuesta.length;i++){
+                if(respuesta[i].checked)
+                pago=respuesta[i].value;      
+            }
+            alert("Ok este producto será pagado en "+pago);
+        }
+</script>
+  <link rel="stylesheet" type="text/css" href="Prendas2Style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1><marquee>Prendas de moda para mujeres</marquee></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#blusas">Blusas</a></li>
+      <li><a href="#pantalones">Pantalones</a></li>
+      <li><a href="#falda">Faldas</a></li>
+    </ul>
+  </nav>
+
+  <section id="blusas">
+    <h2>Blusas</h2>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3124539-600-900?v=1772264107&width=600&height=900&aspect=true"
+        alt="blusa 1">
+      <div class="product-info">
+        <h3>Blusa de algodón</h3>
+        <p> Blusa con efecto frufrú con cuello clásico y botones adelante, hombros caídos y mangas largas con puños abotonados. </p>
+        <p>Precio: $89.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3327052-483-725/Blusa-Oxford---Celeste-Rayas---H-M-PE.jpg?v=638092866940330000"
+        alt="blusa 2">
+      <div class="product-info">
+        <h3>Blusa Oxford</h3>
+        <p>Blusa en denim de algodón lavado con cuello clásico, botones adelante y canesú con trabilla en la espalda.</p>
+        <p>Precio: $69.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/2932515-600-900?v=1772263593&width=600&height=900&aspect=true"
+        alt="blusa 3">
+      <div class="product-info">
+        <h3>Blusa con escote V</h3>
+        <p>Blusa de tela con brillo. Modelo con escote en V, cuello y botones delante, manga larga con perilla y puños sencillos.</p>
+        <p>Precio: $54.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+  <section id="pantalones">
+    <h2>Pantalones</h2>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3021709-600-900?v=1772295221&width=600&height=900&aspect=true"
+        alt="pantalon 1">
+      <div class="product-info">
+        <h3>Pantalón amplio de twill</h3>
+        <p>Pantalón de cinco bolsillos en twill de algodón elástico. 
+        </p>
+        <p>Precio: $69.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/2941619-600-900?v=1772263628&width=600&height=900&aspect=true"
+        alt="pantalon 2">
+      <div class="product-info">
+        <h3>Joggers amplios</h3>
+        <p> Joggers en tejido polera suave de mezcla de algodón.
+        </p>
+        <p>Precio: $69.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3393960-600-900?v=1772263864&width=600&height=900&aspect=true"
+        alt="pantalon 3">
+      <div class="product-info">
+        <h3>Leggins acampanados</h3>
+        <p>Leggings en punto de mezcla de viscosa.</p>
+        <p>Precio: $54.95</p>
+        <button class="add-to-cart">Agregar al carrito </button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+  <section id="falda">
+    <h2>Faldas</h2>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/3052876-600-900?v=1772177312&width=600&height=900&aspect=true"
+        alt="falda 1">
+      <div class="product-info">
+        <h3>Falda con flecos</h3>
+        <p>Falda de punto en mezcla de lana y mohair. 
+        </p>
+        <p>Precio: $179.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/2891716-483-725/Falda-de-viscosa---Verde-lima---H-M-PE.jpg?v=637950959132570000"
+        alt="falda 2">
+      <div class="product-info">
+        <h3>Falda de Viscosa</h3>
+        <p>Falda midi en tejido vaporoso de viscosa. 
+        </p>
+        <p>Precio: $69.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://hmperu.vtexassets.com/arquivos/ids/2803944-600-900?v=1772307220&width=600&height=900&aspect=true"
+        alt="falda 3">
+      <div class="product-info">
+        <h3>Minifalda de malla</h3>
+        <p>Falda entallada en tejido vaporoso de malla con bajo sobrehilado.</p>
+        <p>Precio: $39.95</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+        <h3> Pago a realizar:</h3>
+                    <form>
+                        <label style="color:red">¿Cómo desea pagar este producto?</label><br>
+                        <input type="radio" name="resp" value="Tarjeta"> Tarjeta
+                        <input type="radio" name="resp" value="Efectivo"> Efectivo <br>
+                        <input type="button" class="add-to-cart" onclick="Pago()" name="aceptar" value="Aceptar">
+                    </form>   
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+
+  <!-- Secciones de correas y otros accesorios -->
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Accesorios para Mujeres. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    // Obtener todos los botones "Agregar al carrito"
+    var addToCartButtons = document.querySelectorAll(".add-to-cart");
+  
+    // Recorrer cada botón y agregar un evento de clic
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Obtener el nombre del producto
+        var productName = this.parentElement.querySelector("h3").textContent;
+  
+        // Mostrar mensaje de confirmación
+        alert("Producto \"" + productName + "\" fue añadido al carrito.");
+      });
+    });
+  </script>
+</body>
+</html>

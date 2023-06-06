@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Zapatos para Hombres</title>
+  <link rel="stylesheet" type="text/css" href="AccesoriosStyle.css">
+
+</head>
+
+<body>
+  <header>
+    <marquee scrollamount="20"> <h1>Zapatos para Hombres</h1></marquee>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#zapatos">Zapatos</a></li>
+      <li><a href="#zapatillas">Zapatillas</a></li>
+      <li><a href="#otros">Otros Accesorios</a></li>
+    </ul>
+  </nav>
+
+  <section id="zapatos">
+    <h2>Zapatos</h2>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1389964-1200-auto?v=638163096767600000&width=1200&height=auto&aspect=true"
+        alt="zapatos 1">
+      <div class="product-info">
+        <h3>Zapato de vestir Calimod</h3>
+        <p>Mocasines de vestir de Calimod. Su diseño presenta una capellada  
+            de cuero liso con detalles grabados y una placa de metal 
+            con el nombre de la marca </p>
+        <p>Precio: $155.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1389451-1200-auto?v=638158227295330000&width=1200&height=auto&aspect=true"
+        alt="zapatos 2">
+      <div class="product-info">
+        <h3>Zapatos Casual Renzo Renzini</h3>
+        <p>Su diseño presenta una capellada de cuero con pasadores. 
+            Su interior está compuesto por una plantilla antitranspirable de cuero 
+            y forro textil.</p>
+        <p>Precio: $200.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <br>
+      <br>
+      <img
+        src="https://home.ripley.com.pe/Attachment/WOP_5/2025247026505/2025247026505-1.jpg"
+        alt="zapatos 3">
+      <div class="product-info">
+        <h3>Zapato de vestir Mocasin</h3>
+        <p>Su diseño es de forros de cuero transpirable y plantilla de látex acolchada cubierta de piel para mayor comodidad durante todo el día.
+            </p>
+        <p>Precio: $229.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+ 
+    <!-- Agrega más productos según necesites -->
+  </section>
+  <section id="zapatillas">
+    <h2>Zapatilla</h2>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1395278-1200-auto?v=638183011694600000&width=1200&height=auto&aspect=true"
+        alt="zapatilla 1">
+      <div class="product-info">
+        <h3>Zapatillas Urbano Adidas</h3>
+        <p>Esta zapatilla adidas inspirada en el calzado skate. 
+            Presenta una parte superior de nobuk y una mediasuela de aspecto vulcanizado.
+            
+        </p>
+        <p>Precio: $229.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1390612-1200-auto?v=638163110834470000&width=1200&height=auto&aspect=true"
+        alt="zapatila 2">
+      <div class="product-info">
+        <h3>Zapatillas Urbano Hi Tec</h3>
+        <p>Zapatilla cuero sintético/mesh, ligeras y duraderas, con plantilla de EVA removible para mayor amortiguación en los pies y suela duradera que mejora el agarre.
+        </p>
+        <p>Precio: $290.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dw44f53724/images/hi-res/196152073747_4_20230210120000-mrtPeru.png?sw=800&sh=800"
+        alt="zapatila 3">
+      <div class="product-info">
+        <h3>Air Jordan 2 Retro </h3>
+        <p>Zapatilla piel de lagarto sintética, un diseño sin Swoosh y los logos clásicos de Nike Air. Es perfecto para ir una boda y tan ligero como para usarlo en la cancha.
+        </p>
+        <p>Precio: $690.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    
+    <!-- Agrega más productos según necesites -->
+
+  </section>
+  <!-- Secciones de correas y otros accesorios -->
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Accesorios para Varones. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    // Obtener todos los botones "Agregar al carrito"
+    var addToCartButtons = document.querySelectorAll(".add-to-cart");
+  
+    // Recorrer cada botón y agregar un evento de clic
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Obtener el nombre del producto
+        var productName = this.parentElement.querySelector("h3").textContent;
+  
+        // Mostrar mensaje de confirmación
+        alert("Producto \"" + productName + "\" fue añadido al carrito.");
+      });
+    });
+        // Obtener todas las secciones de productos
+        var productSections = document.querySelectorAll(".product");
+  
+  // Recorrer cada sección y agregar eventos de mouseover y mouseout
+  productSections.forEach(function(section) {
+    section.addEventListener("mouseover", function() {
+      // Aplicar efecto de zoom
+      this.style.transform = "scale(1.1)";
+    });
+
+    section.addEventListener("mouseout", function() {
+      // Quitar efecto de zoom
+      this.style.transform = "scale(1)";
+    });
+  });
+</script>
+
+
+</body>
+
+</html>

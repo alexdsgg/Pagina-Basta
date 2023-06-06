@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Page</title>
+        <!-- Banco de emotes -->
+        <script src="https://kit.fontawesome.com/96ee63a966.js" crossorigin="anonymous"></script>
+        <!-- Banco de emotes -->
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/88/88450.png">
+        <link rel="stylesheet" href="ContactStyle.css">
+        <script>
+            function envio() {
+    
+              var nombres = document.getElementById('nombres').value;
+              var apellidos = document.getElementById('apellidos').value;
+              var telefono = document.getElementById('telefono').value;
+              var correo = document.getElementById('correo').value;
+              var asunto = document.getElementById('asunto').value;
+              var mensaje = document.getElementById('msj').value;
+              var aceptacion = document.getElementById('aceptacion').checked;
+
+              if (nombres === "" || apellidos === "" || telefono === "" || correo === "" || asunto === "" || mensaje === "") {
+                    alert("Debe completar todas las casillas del formulario");
+                    return;
+                }
+
+              if (aceptacion === false) {
+                    alert("Debes aceptar los términos y condiciones");
+                    return; 
+                }
+           
+              alert("El formulario se ha enviado con éxito");
+      
+              document.getElementById('contact-form').reset();
+            }
+        </script>
+    </head>
+    <body>
+
+        <form class="form-contact" id="contact-form">
+
+            <h1>Contáctenos</h1>
+            <input class="a1" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+            <input class="a1" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+            <input class="a1" type="tel" name="telefono" id="telefono" placeholder="Ingrese su nº de teléfono">
+            <input class="a1" type="email" name="correo" id="correo" placeholder="Ingrese su email">
+            <input class="a1" type="text" name="asunto" id="asunto" placeholder="Ingrese el asunto">
+            <textarea class="a1" name="msj" id="msj" placeholder="Escribe tu mensaje..."></textarea>
+            <p><input type="checkbox" name="aceptacion" id="aceptacion"> Estoy de acuerdo con los <a href="https://policies.google.com/terms?hl=es" target="_blank">términos y condiciones</a></p>
+            <input class="boton" type="reset" name="reiniciar" value="Resetear">
+            <input class="boton" type="submit" name="enviar" value="Enviar" onclick="envio()">    
+            <p>Otras vías de comunicación</p>    
+            <p><i class="fa-solid fa-phone"></i> 0800-1-3332</p>
+            <p><i class="fa-regular fa-envelope"></i> businessBasta@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Av. Petit Thouars 5356</p>
+
+        </form> 
+
+    </body>
+
+</html>
+
+
+

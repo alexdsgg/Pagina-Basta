@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accesorios para Hombres</title>
+    <link rel="stylesheet" type="text/css" href="AccesoriosStyle.css">
+    <style>
+        .search-bar {
+            margin-bottom: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Accesorios para Hombres</h1>
+    </header>
+    <div class="search-bar">
+        <form action="buscar.php" method="GET">
+            <input type="text" name="searchTerm" placeholder="Buscar productos" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#gorros">Gorros</a></li>
+            <li><a href="#bufanda">Bufandas</a></li>
+            <li><a href="#otros">Otros Accesorios</a></li>
+        </ul>
+    </nav>
+    <section id="gorros">
+        <h2>Gorros</h2>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/2933028/Gorro-acanalado-tejido---Beige---H-M-PE.jpg?v=637965857755900000"
+                alt="gorro 1">
+            <div class="product-info">
+                <h3>Gorro acanalado tejido</h3>
+                <p>Gorro tejido en punto acanalado suave con doblez.</p>
+                <p>Precio: $29.95</p>
+                <form method="POST" action="agregar_al_carrito.php">
+                    <input type="hidden" name="product_id_1" value="1">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3150888-483-725/Gorro-en-lana-merino---Marron---H-M-PE.jpg?v=638026337855570000"
+                alt="gorro 2">
+            <div class="product-info">
+                <h3>Gorro de lana</h3>
+                <p>Gorro tejido en punto acanalado de lana suave con doblez.</p>
+                <p>Precio: $54.95</p>
+                <form method="POST" action="agregar_al_carrito.php">
+                    <input type="hidden" name="product_id_2" value="2">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3145598-483-725/Cable-knit-hat---Verde-musgo---H-M-PE.jpg?v=638020330322700000"
+                alt="gorro 3">
+            <div class="product-info">
+                <h3>Gorro en punto trenzado</h3>
+                <p>Gorro tejido en punto acanalado de lana suave con doblez.</p>
+                <p>Precio: $39.95</p>
+                <form method="POST" action="agregar_al_carrito.php">
+                    <input type="hidden" name="product_id_3" value="3">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+        <!-- Agrega más productos según necesites -->
+    </section>
+    <section id="bufanda">
+        <h2>Bufandas</h2>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/2724227-483-725/Bufanda---Negro---H-M-PE.jpg?v=637875132664470000"
+                alt="bufanda 1">
+            <div class="product-info">
+                <h3>Bufanda</h3>
+                <p>Bufanda tejida en punto fino suave con flecos en los extremos.</p>
+                <p>Precio: $39.95</p>
+                <form method="POST" action="agregar_al_carrito.php">
+                    <input type="hidden" name="product_id_4" value="4">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3140386-483-725/Bufanda---Gris-oscuro---H-M-PE.jpg?v=638020299541830000"
+                alt="bufanda 2">
+            <div class="product-info">
+                <h3>Bufanda</h3>
+                <p>Bufanda tejida en punto fino suave con flecos en los extremos.</p>
+                <p>Precio: $39.95</p>
+                <form method="POST" action="agregar_al_carrito.php">
+                    <input type="hidden" name="product_id_5" value="5">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3115595-483-725/Bufanda-acanalada---Negro---H-M-PE.jpg?v=638007327738930000"
+                alt="bufanda 3">
+            <div class="product-info">
+                <h3>Bufanda acanalada</h3>
+                <p>Bufanda tejida en punto acanalado suave.</p>
+                <p>Precio: $29.95</p>
+                <form method="POST" action="agregar_al_carrito.php">
+                    <input type="hidden" name="product_id_6" value="6">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+        <!-- Agrega más productos según necesites -->
+    </section>
+    <!-- Secciones de correas y otros accesorios -->
+    <footer>
+        <p>Derechos de autor &copy; 2023 Accesorios para Varones. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener todos los botones "Agregar al carrito"
+        var addToCartButtons = document.querySelectorAll(".product-info button");
+
+        // Recorrer cada botón y agregar un evento de clic
+        addToCartButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+                // Obtener el nombre del producto
+                var productName = this.parentElement.querySelector("h3").textContent;
+
+                // Mostrar mensaje de confirmación
+                alert("Producto \"" + productName + "\" fue añadido al carrito.");
+            });
+        });
+
+        // Obtener todas las secciones de productos
+        var productSections = document.querySelectorAll(".product");
+
+        // Recorrer cada sección y agregar eventos de mouseover y mouseout
+        productSections.forEach(function (section) {
+            section.addEventListener("mouseover", function () {
+                // Aplicar efecto de zoom
+                this.style.transform = "scale(1.1)";
+            });
+
+            section.addEventListener("mouseout", function () {
+                // Quitar efecto de zoom
+                this.style.transform = "scale(1)";
+            });
+        });
+    </script>
+</body>
+
+</html>

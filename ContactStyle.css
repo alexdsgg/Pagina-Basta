@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cm9wYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+.form-contact {
+    width: 420px;
+    background: #24303c;
+    padding: 40px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 20px;
+    font-family:'Garamond';
+    color:white;
+    box-shadow: 10px 20px 40px #000 ;
+}
+
+.form-contact h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Garamond';
+}
+
+.a1 {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #1f53c5;
+    font-family: 'Brush Script MT';
+    font-size: 20px;
+}
+
+.form-contact p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.form-contact a {
+   color: white;
+   text-decoration: none;
+}
+
+.form-contact a:hover {
+    color: rgb(49, 177, 166);
+    text-decoration: underline;
+}
+
+.form-contact .boton {
+    width: 40%;
+    border: 1px solid rgb(243, 243, 243);
+    background: -webkit-linear-gradient(top, #2b6b6b, #1b2455);
+    padding: 12px;
+    color: rgb(243, 243, 243);
+    margin: 16px;
+    font-family: 'Garamond';
+    font-size: 16px;
+ }

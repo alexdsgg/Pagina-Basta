@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Zapatos para Mujeres</title>
+  <link rel="stylesheet" type="text/css" href="AccesoriosStyle.css">
+
+</head>
+
+<body>
+  <header>
+    <marquee scrollamount="20"> <h1>Zapatos para Mujeres</h1></marquee>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#botines">Botines</a></li>
+      <li><a href="#zapatillas">Zapatillas</a></li>
+      <li><a href="#otros">Otros Accesorios</a></li>
+    </ul>
+  </nav>
+
+  <section id="botines">
+    <h2>Botines</h2>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1391883-1200-auto?v=638170237423100000&width=1200&height=auto&aspect=true"
+        alt="botines 1">
+      <div class="product-info">
+        <h3>Botines Casual Footloos Eliana Pu Marron</h3>
+        <p> Botines color marron para usarlo en cualquier ocasion.<br>
+            Cordón de ajuste elástico en el bajo con topes con forro. </p>
+        <p>Precio: $189.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1376334-1200-auto?v=638133916762670000&width=1200&height=auto&aspect=true"
+        alt="botines 2">
+      <div class="product-info">
+        <h3>Botines Casual Footloose Jhoanna Textil Negro</h3>
+        <p>Botines color negro , con capellada textil con elastico a los costados</p>
+        <p>Precio: $199.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://oechsle.vteximg.com.br/arquivos/ids/14436081-1500-1500/2253236.jpg?v=638171092465330000"
+        alt="botines 3">
+      <div class="product-info">
+        <h3>Botines Malabar Buck Negro </h3>
+        <p>Diseño botas duraderas de estilo de combate. Plantilla ligeramente acolchada y una suela exterior. Para llevar de diario, para ir a trabajar, a la universidad, de viaje, son imprescindibles.</p>
+        <p>Precio: $159.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+ 
+    <!-- Agrega más productos según necesites -->
+  </section>
+  <section id="zapatillas">
+    <h2>Zapatilla</h2>
+    <div class="product">
+      <img
+        src="https://passarelape.vtexassets.com/arquivos/ids/1398350-1200-auto?v=638188996317200000&width=1200&height=auto&aspect=true"
+        alt="zapatilla 1">
+      <div class="product-info">
+        <h3>Zapatillas Urbano Nike Rosado</h3>
+        <p><br>Zapatilla nike  diseño moderno de color rosa, y es comoda para cualquier tipo de pie.
+            
+        </p>
+        <p>Precio: $389.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://mister-mango.omni.la/items_2/uid_commerces.1/uid_items_2.FDBLBG2HFFSV/1500x1500/64249CB21921A-Zapatilla-Mujer-DLites.jpg"
+        alt="zapatila 2">
+      <div class="product-info">
+        <h3>Zapatillas Urbano Skechers</h3>
+        <p>Zapatilla de piel trubuck lisa , con costuras sobresalientes y capas de adorno.
+        </p>
+        <p>Precio: $359.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="product">
+      <img
+        src="https://oechsle.vteximg.com.br/arquivos/ids/4616315-1500-1500/1628677_2.jpg?v=637657702595530000"
+        alt="zapatila 3">
+      <div class="product-info">
+        <h3>Zapatillas Converse Urbanas </h3>
+        <p>Zapatillas urbanas de la marca Converse, cuentan con un diseño único ya que están elaboradas con forro de textil y suela de caucho
+        </p>
+        <p>Precio: $399.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <img id="logo-carrito" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrito de compras">
+    <!-- Agrega más productos según necesites -->
+
+  </section>
+  <!-- Secciones de correas y otros accesorios -->
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Accesorios para Varones. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    // Obtener todos los botones "Agregar al carrito"
+    var addToCartButtons = document.querySelectorAll(".add-to-cart");
+  
+    // Recorrer cada botón y agregar un evento de clic
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Obtener el nombre del producto
+        var productName = this.parentElement.querySelector("h3").textContent;
+  
+        // Mostrar mensaje de confirmación
+        alert("Producto \"" + productName + "\" fue añadido al carrito.");
+      });
+    });
+         // Obtener todas las secciones de productos
+         var productSections = document.querySelectorAll(".product");
+  
+  // Recorrer cada sección y agregar eventos de mouseover y mouseout
+  productSections.forEach(function(section) {
+    section.addEventListener("mouseover", function() {
+      // Aplicar efecto de zoom
+      this.style.transform = "scale(1.1)";
+    });
+
+    section.addEventListener("mouseout", function() {
+      // Quitar efecto de zoom
+      this.style.transform = "scale(1)";
+    });
+  });
+</script>
+  
+  
+
+</body>
+
+</html>

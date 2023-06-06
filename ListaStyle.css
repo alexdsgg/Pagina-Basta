@@ -1,0 +1,29 @@
+header {
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    border: 34px solid;
+    border-image-source: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV58ufkZZBtzaT_GtvK0WxeBnMTEBRCvpstg&usqp=CAU");
+    border-image-slice: 29;
+    border-image-repeat: round;
+}
+
+#nombres {
+    font-size: 54px ;
+    font-family:"Garamont";
+    color: purple;
+}
+
+article{
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    border: 10px solid;
+    border-radius: 50px;    
+}
+
+#titulo {
+    font-size: 20px ;
+    font-family: "Arial";
+    color:white;  
+}

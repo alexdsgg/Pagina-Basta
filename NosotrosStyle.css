@@ -1,0 +1,88 @@
+body {
+
+    background-image: url(ImgNosotros/FondoNosotros1.jpg);
+    background-size: cover;
+    color: white;
+    font-family: Garamond;
+
+}
+
+.Titulos {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    text-align: justify;
+    font-size: 23px;
+}
+
+
+
+#Nosotros {
+    margin: 30px;
+    padding: 15px;
+    border: 6px solid black;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+#Nosotros img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0px 50px;
+}
+
+
+#NHistoria {
+    margin: 30px;
+    padding: 15px;
+    border: 6px solid black;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#NHistoria img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0px 50px;
+}
+
+#Proposito {
+    display: flex;
+
+
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    border: 6px solid black;
+    border-radius: 20px;
+}
+
+
+
+.top, .bottom, .right{
+    flex: 1;
+}
+
+.top {
+
+    padding: 15px;
+    border: 6px solid black;
+    border-radius: 20px;
+
+}
+
+.bottom {
+
+    padding: 15px;
+    border: 6px solid black;
+    border-radius: 20px;
+}

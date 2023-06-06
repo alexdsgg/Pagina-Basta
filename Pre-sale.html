@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-Sale Supreme & Gucci</title>
+  <link rel="stylesheet" type="text/css" href="Pre-saleStyle.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pre-Sale "Supreme & Gucci" Available In December</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#supreme">Supreme</a></li>
+      <li><a href="#gucci">Gucci</a></li>
+    </ul>
+  </nav>
+
+  <section id="supreme">
+    <h2>Supreme</h2>
+    <div class="product">
+      <img src="https://images.stockx.com/images/Supreme-Skittles-Mitchell-Ness-Varsity-Jacket-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1638556934&q=75"
+        alt="chaqueta 1">
+      <div class="product-info">
+        <h3>Chaqueta Casual Supreme</h3>
+        <p>Chaqueta Supreme casual con estampados de Skittles elegantes y con material hecho a mano de color negro.</p>
+        <p>Precio: $478.99</p>
+        <button class="add-to-cart">Pre-Ordenar</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.stockx.com/images/Supreme-The-North-Face-S-Logo-Summit-Series-Himalayan-Parka-Black.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1606325835&q=75"
+        alt="chaqueta 2">
+      <div class="product-info">
+        <h3>Chaqueta con Capucha Supreme</h3>
+        <p>Chaqueta Supreme de color negro con capucha impermeable al agua y material de calidad.</p>
+        <p>Precio: $602.99</p>
+        <button class="add-to-cart">Pre-Ordenar</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.vestiairecollective.com/cdn-cgi/image/q=80,f=auto,/produit/chaqueta-supreme-de-algodon-azul-25393222-1_3.jpg"
+        alt="chaqueta 3">
+      <div class="product-info">
+        <h3>Chaqueta de Béisbol Supreme</h3>
+        <p>Chaqueta de béisbol con exterior de algodón con aplicaciones e interior de poliéster acolchado.</p>
+        <p>Precio: $509.95</p>
+        <button class="add-to-cart">Pre-Ordenar</button>
+      </div>
+    </div>
+    <!-- Agrega más productos según necesites -->
+  </section>
+  
+  <section id="gucci">
+    <h2>Gucci</h2>
+    <div class="product">
+      <img src="https://cdn-images.farfetch-contents.com/18/48/22/95/18482295_39799347_300.jpg" alt="polo 1">
+      <div class="product-info">
+        <h3>Polo Beige Gucci</h3>
+        <p>Polo camisero de algodón extra cómodo de color beige con estampado Gucci en el centro.</p>
+        <p>Precio: $800.99</p>
+        <button class="add-to-cart">Pre-Ordenar</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://cdn.fashiola.es/L601431376/gucci-polo-de-manga-corta-con-logo-gg.jpg" alt="polo 2">
+      <div class="product-info">
+        <h3>Polo Blue Gucci</h3>
+        <p>Polo camisero Gucci de algodón con estampados Gucci en todo el polo de color azul marino.</p>
+        <p>Precio: $706.99</p>
+        <button class="add-to-cart">Pre-Ordenar</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.fashiola.es/product-list/300x450/luisaviaroma/603808781/luisaviaroma-hombre-camisa-polo-de-algodon-multi-xs.webp"
+        alt="Polo 3">
+      <div class="product-info">
+        <h3>Polo White Gucci</h3>
+        <p>Polo camisero clásico de Gucci de algodón de color blanco con rayas rojas y azules en las mangas.</p>
+        <p>Precio: $687.99</p>
+        <button class="add-to-cart">Pre-Ordenar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Pre-ordena tus productos Supreme y Gucci edición limitada solo pagando con tu tarjeta American Express.</p>
+  </footer>
+  
+  <script>
+    // botones "Agregar al carrito"
+    var addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+    // Recorrer cada botón y agregar un evento de clic
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Obtener el nombre del producto
+        var productName = this.parentElement.querySelector("h3").textContent;
+
+        // Mostrar mensaje de confirmación
+        alert("Te enviaremos un recordatorio del producto: \"" + productName + "\" el día de su lanzamiento.");
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('ImgNosotros/background6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-contact label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 14px;
+    color: #888;
+    transition: 0.3s;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 1;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: transparent;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #2980b9;
+    opacity: 1;
+}
+
+.form-group input[type="checkbox"] {
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: none;
+    transform: none;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.form-group label a {
+    color: #2980b9;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.boton {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.boton-reset {
+    background: #ccc;
+}
+
+.boton-enviar {
+    background: #ccc;
+}
+
+.boton:hover {
+    background: #89b4d3;
+}
+
+.contact-info {
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+

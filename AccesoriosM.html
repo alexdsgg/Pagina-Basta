@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Accesorios para Mujeres</title>
+    <link rel="stylesheet" type="text/css" href="AccesoriosStyle.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Accesorios para Mujeres</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#maletin">Maletines</a></li>
+            <li><a href="#aretes">Aretes</a></li>
+            <li><a href="#otros">Otros Accesorios</a></li>
+        </ul>
+    </nav>
+
+    <section id="gorros">
+        <h2>Maletines</h2>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3016404-483-725/Cartera-de-mano---Black---H-M-PE.jpg?v=637981404029500000"
+                alt="maletin 1">
+            <div class="product-info">
+                <h3>Cartera de mano</h3>
+                <p>Cartera de mano pequeña en cuero sintético con cierre en la parte superior y asa ancha de cuero
+                    sintético con aros de metal. Largo 24 cm. Alto 17 cm. Ancho en la parte inferior 7 cm. Forro en
+                    tafetán de poliéster reciclado.</p>
+                <p>Precio: $54.95</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3075416-483-725/Cartera-bandolera-peque%C3%B1a---Negro---H-M-PE.jpg?v=637996983408570000"
+                alt="maletin 2">
+            <div class="product-info">
+                <h3>Cartera bandolera pequeña</h3>
+                <p>Cartera bandolera pequeña con cierre arriba y correas. Forro de tafeta. Ancho 5 cm. Alto 13 cm. Largo
+                    27 cm.</p>
+                <p>Precio: $54.95</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/2890376-483-725/Minicartera---Beige-claro---H-M-PE.jpg?v=637950148198370000"
+                alt="maletin 3">
+            <div class="product-info">
+                <h3>Minicartera</h3>
+                <p>Cartera pequeña con cierre superior, correa ancha ajustable y tres compartimentos exteriores con
+                    cierre. Con forro. Ancho 6 cm. Alto 10 cm. Largo 18 cm.</p>
+                <p>Precio: $54.95</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Agrega más productos según necesites -->
+    </section>
+    <section id="orejera">
+        <h2>Aretes</h2>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3623881-483-725/Aretes-a-presion-en-forma-de-estrella---Plateado---H-M-PE.jpg?v=638193958249170000"
+                alt="arete 1">
+            <div class="product-info">
+                <h3>Aretes a presión en forma de estrella</h3>
+                <p>Mugler H&M. Aretes a presión de atrevido diseño en metal brillante con la estrella de la firma.
+                    Elaborados con metal reciclado proveniente de residuos posconsumo. Alto 4 cm.</p>
+                <p>Precio: $159.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3623885-483-725/Aretes-de-lagrima---Plateado---H-M-PE.jpg?v=638193958267930000"
+                alt="arete 2">
+            <div class="product-info">
+                <h3>Aretes de lagrima</h3>
+                <p>Mugler H&M. Aretes de atrevido diseño en metal pulido con colgante de lágrima y strass de vidrio en
+                    la parte superior. Logotipo del diseñador grabado en el dorso del arete. Elaborados con metal
+                    reciclado proveniente de residuos posconsumo. Broche de mariposa. Largo 9 cm.</p>
+                <p>Precio: $179.00 </p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://hmperu.vtexassets.com/arquivos/ids/3621601-483-725/Aretes-de-boomerang---Plateado---H-M-PE.jpg?v=638193102483230000"
+                alt="arete 3">
+            <div class="product-info">
+                <h3>Arete de boomerang</h3>
+                <p>Mugler H&M. Llamativos aretes en metal pulido brillante con colgante en forma de boomerang. Broche de
+                    mariposa. Elaborados con metal reciclado proveniente de residuos posconsumo. Diseño inspirado en un
+                    preciado artículo de la magnífica colección de archivo de Thierry Mugler. Largo 11,5 cm.</p>
+                <p>Precio: $219.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Agrega más productos según necesites -->
+
+    </section>
+    <!-- Secciones de correas y otros accesorios -->
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 Accesorios para Varones. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener todos los botones "Agregar al carrito"
+        var addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+        // Recorrer cada botón y agregar un evento de clic
+        addToCartButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // Obtener el nombre del producto
+                var productName = this.parentElement.querySelector("h3").textContent;
+
+                // Mostrar mensaje de confirmación
+                alert("Producto \"" + productName + "\" fue añadido al carrito.");
+            });
+        });
+
+        // Obtener todas las secciones de productos
+        var productSections = document.querySelectorAll(".product");
+
+        // Recorrer cada sección y agregar eventos de mouseover y mouseout
+        productSections.forEach(function (section) {
+            section.addEventListener("mouseover", function () {
+                // Aplicar efecto de zoom
+                this.style.transform = "scale(1.1)";
+            });
+
+            section.addEventListener("mouseout", function () {
+                // Quitar efecto de zoom
+                this.style.transform = "scale(1)";
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
